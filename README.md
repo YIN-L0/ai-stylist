@@ -12,6 +12,8 @@ https://ai-stylist-frontend.onrender.com/
 
 This app is basically your personal fashion consultant that never sleeps. You tell it your style preferences, optionally upload some photos, and it gives you tailored fashion advice including color palettes, outfit suggestions, and brand recommendations from JD.com's partner stores.
 
+*Important Note:** This application uses **Mock API** for demonstration purposes. The styling recommendations are generated using predefined templates and logic rather than actual AI services. This makes it perfect for showcasing the user interface and user experience without requiring expensive AI API integrations.
+
 The whole thing started as a way to help people who wants to put together outfits better or just want to try something new. Instead of spending hours scrolling through fashion blogs or asking friends for advice, you get instant, personalized recommendations.
 
 ### Features
@@ -182,6 +184,8 @@ Most are handled, but if you see new ones, they're usually about missing depende
 这基本上就是数字个人时尚顾问。你告诉它你的风格喜好，可选择上传一些照片，然后它会给你量身定制的时尚建议，包括色彩搭配、服装建议和京东合作品牌推荐。
 
 开发这个应用的初衷是帮助那些在搭配服装上有需求和创意的人，或者想要尝试新风格的人。不用花几个小时浏览时尚博客或者问朋友建议，你可以立即获得个性化的推荐。
+这个应用使用**模拟API (Mock API)**来演示功能。造型建议是通过预定义的模板和逻辑生成的，而不是真正的AI服务。这样设计使得应用非常适合展示用户界面和用户体验，而无需昂贵的AI API集成。
+
 
 ### 功能特点
 
