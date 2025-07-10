@@ -168,6 +168,15 @@ cd backend-express && npm run dev
 cd my-react-app && npm start
 ```
 
+## 🚀 部署指南
+
+### 本地部署
+查看 `DEPLOYMENT.md` 获取完整部署指南
+
+### Render部署
+- **快速部署**: 查看 `deploy-to-render.md`
+- **详细指南**: 查看 `RENDER_DEPLOYMENT_GUIDE.md`
+
 ## 🔒 安全说明
 
 - 文件上传限制为5MB
@@ -193,4 +202,4 @@ cd my-react-app && npm start
 
 ---
 
-**享受你的时尚造型之旅！** ✨👗👔 
+**享受你的时尚造型之旅！** ✨👗👔
