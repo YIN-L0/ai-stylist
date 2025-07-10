@@ -1,8 +1,10 @@
 # AI Stylist - Personal Fashion Recommendation App / AI时尚造型师 - 个人时尚推荐应用
 
 A full-stack web application that provides personalized fashion styling recommendations based on user preferences and photos. Built with React frontend and Express backend, designed with JD.com's signature red theme.
+https://ai-stylist-frontend.onrender.com/
 
 一个全栈网页应用，基于用户偏好和照片提供个性化时尚造型建议。采用React前端和Express后端，使用京东标志性红色主题设计。
+https://ai-stylist-frontend.onrender.com/
 
 ## English Version
 
