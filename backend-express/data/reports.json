@@ -1,0 +1,280 @@
+[
+  {
+    "id": "1752039326311",
+    "userId": "1752039326310",
+    "report": {
+      "personalInfo": {
+        "name": "测试用户",
+        "stylePreference": "Casual & Comfortable",
+        "additionalPreferences": "测试用户偏好"
+      },
+      "analysis": {
+        "bodyType": "基于您的照片分析，我们为您量身定制了以下建议",
+        "colorPalette": [
+          "浅蓝色",
+          "白色",
+          "米色",
+          "浅灰色",
+          "薄荷绿"
+        ],
+        "recommendations": [
+          "选择舒适的面料，如棉质和针织材料",
+          "投资优质的基础单品，如白色T恤和牛仔裤",
+          "选择舒适的运动鞋或平底鞋",
+          "添加简单的配饰如手表或帽子"
+        ]
+      },
+      "outfitSuggestions": [
+        "白色T恤 + 蓝色牛仔裤 + 白色运动鞋",
+        "针织毛衣 + 休闲裤 + 乐福鞋",
+        "连帽卫衣 + 运动裤 + 运动鞋"
+      ],
+      "shoppingSuggestions": [
+        "优衣库",
+        "Gap",
+        "Zara",
+        "H&M"
+      ],
+      "summary": "亲爱的测试用户，根据您Casual & Comfortable的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。"
+    },
+    "createdAt": "2025-07-09T05:35:26.311Z"
+  },
+  {
+    "id": "1752039397997",
+    "userId": "1752039397996",
+    "report": {
+      "personalInfo": {
+        "name": "张小美",
+        "stylePreference": "Business Professional",
+        "additionalPreferences": "喜欢简约大气的风格"
+      },
+      "analysis": {
+        "bodyType": "基于您的照片分析，我们为您量身定制了以下建议",
+        "colorPalette": [
+          "深蓝色",
+          "黑色",
+          "灰色",
+          "白色",
+          "深红色"
+        ],
+        "recommendations": [
+          "投资高质量的西装和正装",
+          "选择经典的商务色彩",
+          "注重细节，如领带和袖扣",
+          "选择优质的皮鞋"
+        ]
+      },
+      "outfitSuggestions": [
+        "深蓝色西装 + 白色衬衫 + 深色领带",
+        "灰色套装 + 浅蓝色衬衫 + 黑色皮鞋",
+        "黑色西装 + 白色衬衫 + 简约配饰"
+      ],
+      "shoppingSuggestions": [
+        "Hugo Boss",
+        "Armani",
+        "Brooks Brothers",
+        "定制西装店"
+      ],
+      "summary": "亲爱的张小美，根据您Business Professional的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。"
+    },
+    "createdAt": "2025-07-09T05:36:37.997Z"
+  },
+  {
+    "id": "1752039634327",
+    "userId": "1752039634326",
+    "report": {
+      "personalInfo": {
+        "name": "测试用户",
+        "stylePreference": "Casual & Comfortable",
+        "additionalPreferences": "测试"
+      },
+      "analysis": {
+        "bodyType": "基于您的照片分析，我们为您量身定制了以下建议",
+        "colorPalette": [
+          "浅蓝色",
+          "白色",
+          "米色",
+          "浅灰色",
+          "薄荷绿"
+        ],
+        "recommendations": [
+          "选择舒适的面料，如棉质和针织材料",
+          "投资优质的基础单品，如白色T恤和牛仔裤",
+          "选择舒适的运动鞋或平底鞋",
+          "添加简单的配饰如手表或帽子"
+        ]
+      },
+      "outfitSuggestions": [
+        "白色T恤 + 蓝色牛仔裤 + 白色运动鞋",
+        "针织毛衣 + 休闲裤 + 乐福鞋",
+        "连帽卫衣 + 运动裤 + 运动鞋"
+      ],
+      "shoppingSuggestions": [
+        "优衣库",
+        "Gap",
+        "Zara",
+        "H&M"
+      ],
+      "summary": "亲爱的测试用户，根据您Casual & Comfortable的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。"
+    },
+    "createdAt": "2025-07-09T05:40:34.327Z"
+  },
+  {
+    "id": "1752047239636",
+    "userId": "1752047239634",
+    "report": {
+      "personalInfo": {
+        "name": "测试用户",
+        "stylePreference": "Casual & Comfortable",
+        "additionalPreferences": "喜欢简约风格"
+      },
+      "analysis": {
+        "bodyType": "基于您的照片分析，我们为您量身定制了以下建议",
+        "colorPalette": [
+          "浅蓝色",
+          "白色",
+          "米色",
+          "浅灰色",
+          "薄荷绿"
+        ],
+        "recommendations": [
+          "选择舒适的面料，如棉质和针织材料",
+          "投资优质的基础单品，如白色T恤和牛仔裤",
+          "选择舒适的运动鞋或平底鞋",
+          "添加简单的配饰如手表或帽子"
+        ]
+      },
+      "outfitSuggestions": [
+        "白色T恤 + 蓝色牛仔裤 + 白色运动鞋",
+        "针织毛衣 + 休闲裤 + 乐福鞋",
+        "连帽卫衣 + 运动裤 + 运动鞋"
+      ],
+      "shoppingSuggestions": [
+        "优衣库",
+        "Gap",
+        "Zara",
+        "H&M"
+      ],
+      "summary": "亲爱的测试用户，根据您Casual & Comfortable的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。"
+    },
+    "createdAt": "2025-07-09T07:47:19.636Z"
+  },
+  {
+    "id": "1752048081284",
+    "userId": "1752048081283",
+    "report": {
+      "personalInfo": {
+        "name": "x1",
+        "stylePreference": "Business Professional"
+      },
+      "analysis": {
+        "bodyType": "基于您的照片分析，我们为您量身定制了以下建议",
+        "colorPalette": [
+          "深蓝色",
+          "黑色",
+          "灰色",
+          "白色",
+          "深红色"
+        ],
+        "recommendations": [
+          "投资高质量的西装和正装",
+          "选择经典的商务色彩",
+          "注重细节，如领带和袖扣",
+          "选择优质的皮鞋"
+        ]
+      },
+      "outfitSuggestions": [
+        "深蓝色西装 + 白色衬衫 + 深色领带",
+        "灰色套装 + 浅蓝色衬衫 + 黑色皮鞋",
+        "黑色西装 + 白色衬衫 + 简约配饰"
+      ],
+      "shoppingSuggestions": [
+        "Hugo Boss",
+        "Armani",
+        "Brooks Brothers",
+        "定制西装店"
+      ],
+      "summary": "亲爱的x1，根据您Business Professional的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。"
+    },
+    "createdAt": "2025-07-09T08:01:21.284Z"
+  },
+  {
+    "id": "1752069606847",
+    "userId": "1752069606845",
+    "report": {
+      "personalInfo": {
+        "name": "测试用户metadata",
+        "stylePreference": "Casual & Comfortable",
+        "additionalPreferences": "测试metadata存储"
+      },
+      "analysis": {
+        "bodyType": "基于您的照片分析，我们为您量身定制了以下建议",
+        "colorPalette": [
+          "浅蓝色",
+          "白色",
+          "米色",
+          "浅灰色",
+          "薄荷绿"
+        ],
+        "recommendations": [
+          "选择舒适的面料，如棉质和针织材料",
+          "投资优质的基础单品，如白色T恤和牛仔裤",
+          "选择舒适的运动鞋或平底鞋",
+          "添加简单的配饰如手表或帽子"
+        ]
+      },
+      "outfitSuggestions": [
+        "白色T恤 + 蓝色牛仔裤 + 白色运动鞋",
+        "针织毛衣 + 休闲裤 + 乐福鞋",
+        "连帽卫衣 + 运动裤 + 运动鞋"
+      ],
+      "shoppingSuggestions": [
+        "优衣库",
+        "Gap",
+        "Zara",
+        "H&M"
+      ],
+      "summary": "亲爱的测试用户metadata，根据您Casual & Comfortable的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。"
+    },
+    "createdAt": "2025-07-09T14:00:06.847Z"
+  },
+  {
+    "id": "1752071045931",
+    "userId": "1752071045929",
+    "report": {
+      "personalInfo": {
+        "name": "x3",
+        "stylePreference": "Business Professional"
+      },
+      "analysis": {
+        "bodyType": "基于您的照片分析，我们为您量身定制了以下建议",
+        "colorPalette": [
+          "深蓝色",
+          "黑色",
+          "灰色",
+          "白色",
+          "深红色"
+        ],
+        "recommendations": [
+          "投资高质量的西装和正装",
+          "选择经典的商务色彩",
+          "注重细节，如领带和袖扣",
+          "选择优质的皮鞋"
+        ]
+      },
+      "outfitSuggestions": [
+        "深蓝色西装 + 白色衬衫 + 深色领带",
+        "灰色套装 + 浅蓝色衬衫 + 黑色皮鞋",
+        "黑色西装 + 白色衬衫 + 简约配饰"
+      ],
+      "shoppingSuggestions": [
+        "Hugo Boss",
+        "Armani",
+        "Brooks Brothers",
+        "定制西装店"
+      ],
+      "summary": "亲爱的x3，根据您Business Professional的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。"
+    },
+    "createdAt": "2025-07-09T14:24:05.931Z"
+  }
+]

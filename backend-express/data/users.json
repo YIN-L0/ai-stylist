@@ -1,0 +1,151 @@
+[
+  {
+    "id": "1752039326310",
+    "name": "测试用户",
+    "email": "test@example.com",
+    "stylePreference": "Casual & Comfortable",
+    "additionalPreferences": "测试用户偏好",
+    "photos": [],
+    "createdAt": "2025-07-09T05:35:26.310Z"
+  },
+  {
+    "id": "1752039397996",
+    "name": "张小美",
+    "email": "zhang@example.com",
+    "stylePreference": "Business Professional",
+    "additionalPreferences": "喜欢简约大气的风格",
+    "photos": [],
+    "createdAt": "2025-07-09T05:36:37.997Z"
+  },
+  {
+    "id": "1752039634326",
+    "name": "测试用户",
+    "email": "test@example.com",
+    "stylePreference": "Casual & Comfortable",
+    "additionalPreferences": "测试",
+    "photos": [],
+    "createdAt": "2025-07-09T05:40:34.326Z"
+  },
+  {
+    "id": "1752047239634",
+    "name": "测试用户",
+    "email": "test@example.com",
+    "stylePreference": "Casual & Comfortable",
+    "additionalPreferences": "喜欢简约风格",
+    "photos": [],
+    "createdAt": "2025-07-09T07:47:19.634Z"
+  },
+  {
+    "id": "1752048081283",
+    "name": "x1",
+    "email": "x@x.com",
+    "stylePreference": "Business Professional",
+    "photos": [],
+    "createdAt": "2025-07-09T08:01:21.283Z"
+  },
+  {
+    "id": "1752069606845",
+    "name": "测试用户metadata",
+    "email": "metadata@test.com",
+    "stylePreference": "Casual & Comfortable",
+    "additionalPreferences": "测试metadata存储",
+    "photos": [
+      {
+        "filename": "photos-1752069606843-259278572.png",
+        "originalname": "test.png",
+        "url": "http://localhost:5001/uploads/photos-1752069606843-259278572.png",
+        "size": 66,
+        "metadata": {
+          "file": {
+            "fileName": "test.png",
+            "serverFileName": "photos-1752069606843-259278572.png",
+            "fileSize": 66,
+            "fileSizeFormatted": "66 Bytes",
+            "fileFormat": "png",
+            "mimeType": "image/png",
+            "uploadTime": "2025-07-09T14:00:06.845Z",
+            "lastModified": "2025-07-09T14:00:06.845Z",
+            "filePath": "/Users/a12345/Desktop/ai-stylist/backend-express/uploads/photos-1752069606843-259278572.png",
+            "fileExtension": ".png",
+            "isSupported": true,
+            "hash": "6451774a2ec3f77b213a11670d89333d",
+            "url": "http://localhost:5001/uploads/photos-1752069606843-259278572.png"
+          },
+          "image": {
+            "width": 1,
+            "height": 1,
+            "aspectRatio": "1.00",
+            "resolution": "1x1",
+            "megapixels": "0.00"
+          },
+          "processing": {
+            "extractedAt": "2025-07-09T14:00:06.845Z",
+            "extractorVersion": "1.0.0",
+            "status": "completed"
+          }
+        },
+        "summary": {
+          "name": "test.png",
+          "size": "66 Bytes",
+          "format": "PNG",
+          "dimensions": "1x1",
+          "megapixels": "0.00MP",
+          "aspectRatio": "1.00"
+        }
+      }
+    ],
+    "createdAt": "2025-07-09T14:00:06.845Z"
+  },
+  {
+    "id": "1752071045929",
+    "name": "x3",
+    "email": "c3@x3.com",
+    "stylePreference": "Business Professional",
+    "photos": [
+      {
+        "filename": "photos-1752071045880-788619854.jpg",
+        "originalname": "daniyal-ahmed-5A9nxftNPYM-unsplash.jpg",
+        "url": "http://localhost:5001/uploads/photos-1752071045880-788619854.jpg",
+        "size": 12091343,
+        "metadata": {
+          "file": {
+            "fileName": "daniyal-ahmed-5A9nxftNPYM-unsplash.jpg",
+            "serverFileName": "photos-1752071045880-788619854.jpg",
+            "fileSize": 12091343,
+            "fileSizeFormatted": "11.53 MB",
+            "fileFormat": "jpg",
+            "mimeType": "image/jpeg",
+            "uploadTime": "2025-07-09T14:24:05.905Z",
+            "lastModified": "2025-07-09T14:24:05.905Z",
+            "filePath": "/Users/a12345/Desktop/ai-stylist/backend-express/uploads/photos-1752071045880-788619854.jpg",
+            "fileExtension": ".jpg",
+            "isSupported": true,
+            "hash": "c94744bf8ac1927e9840a99aa7cef1bd",
+            "url": "http://localhost:5001/uploads/photos-1752071045880-788619854.jpg"
+          },
+          "image": {
+            "width": 6336,
+            "height": 9504,
+            "aspectRatio": "0.67",
+            "resolution": "6336x9504",
+            "megapixels": "60.22"
+          },
+          "processing": {
+            "extractedAt": "2025-07-09T14:24:05.929Z",
+            "extractorVersion": "1.0.0",
+            "status": "completed"
+          }
+        },
+        "summary": {
+          "name": "daniyal-ahmed-5A9nxftNPYM-unsplash.jpg",
+          "size": "11.53 MB",
+          "format": "JPG",
+          "dimensions": "6336x9504",
+          "megapixels": "60.22MP",
+          "aspectRatio": "0.67"
+        }
+      }
+    ],
+    "createdAt": "2025-07-09T14:24:05.929Z"
+  }
+]
