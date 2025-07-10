@@ -27,7 +27,8 @@ import {
   ClockCircleOutlined,
   HeartOutlined,
   InfoCircleOutlined,
-  DatabaseOutlined
+  DatabaseOutlined,
+  ReloadOutlined
 } from '@ant-design/icons';
 import './AdminDashboard.css';
 
@@ -45,35 +46,36 @@ const AdminDashboard = () => {
   const [photoMetadata, setPhotoMetadata] = useState({});
 
   // 获取所有数据
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      try {
-        // 并行获取所有数据
-        const [reportsResponse, statisticsResponse] = await Promise.all([
-          fetch('http://localhost:5001/api/styling-reports'),
-          fetch('http://localhost:5001/api/statistics')
-        ]);
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      // 并行获取所有数据
+      const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001/api';
+      const [reportsResponse, statisticsResponse] = await Promise.all([
+        fetch(`${API_BASE_URL}/styling-reports`),
+        fetch(`${API_BASE_URL}/statistics`)
+      ]);
 
-        if (reportsResponse.ok) {
-          const reportsData = await reportsResponse.json();
-          setReports(reportsData.data || []);
-          // 从报告中提取用户数据
-          const userData = reportsData.data?.map(report => report.user) || [];
-          setUsers(userData);
-        }
-
-        if (statisticsResponse.ok) {
-          const statsData = await statisticsResponse.json();
-          setStatistics(statsData.data || {});
-        }
-      } catch (error) {
-        console.error('获取管理员数据失败:', error);
-      } finally {
-        setLoading(false);
+      if (reportsResponse.ok) {
+        const reportsData = await reportsResponse.json();
+        setReports(reportsData.data || []);
+        // 从报告中提取用户数据
+        const userData = reportsData.data?.map(report => report.user) || [];
+        setUsers(userData);
       }
-    };
 
+      if (statisticsResponse.ok) {
+        const statsData = await statisticsResponse.json();
+        setStatistics(statsData.data || {});
+      }
+    } catch (error) {
+      console.error('获取管理员数据失败:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
     fetchData();
   }, []);
 
@@ -84,7 +86,8 @@ const AdminDashboard = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5001/api/photo-metadata/${filename}`);
+      const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001/api';
+      const response = await fetch(`${API_BASE_URL}/photo-metadata/${filename}`);
       if (response.ok) {
         const data = await response.json();
         setPhotoMetadata(prev => ({
@@ -284,13 +287,23 @@ const AdminDashboard = () => {
   return (
     <div className="admin-dashboard">
       <Card className="dashboard-header" bordered={false}>
-        <Row gutter={24} align="middle">
+        <Row gutter={24} align="middle" justify="space-between">
           <Col>
             <Title level={2} style={{ margin: 0 }}>
               <DatabaseOutlined style={{ marginRight: '8px', color: '#1890ff' }} />
               管理员仪表板
             </Title>
             <Text type="secondary">用户造型请求管理</Text>
+          </Col>
+          <Col>
+            <Button 
+              icon={<ReloadOutlined />} 
+              onClick={fetchData}
+              loading={loading}
+              type="primary"
+            >
+              刷新数据
+            </Button>
           </Col>
         </Row>
       </Card>
