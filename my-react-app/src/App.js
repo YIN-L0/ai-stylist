@@ -285,7 +285,7 @@ function App() {
       <div className="header-content">
         <div className="logo-section">
           <HeartOutlined style={{ fontSize: '24px', color: '#fff', marginRight: '8px' }} />
-          <span style={{ color: '#fff', fontSize: '20px', fontWeight: 'bold' }}>时尚造型师</span>
+          <span style={{ color: '#fff', fontSize: '20px', fontWeight: 'bold' }}>京东时尚造型师</span>
         </div>
         
         <div className="header-nav-container">
