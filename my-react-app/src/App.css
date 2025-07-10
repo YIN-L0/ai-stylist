@@ -42,11 +42,27 @@ body {
   font-weight: bold;
 }
 
-.status-section {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
+  .status-section {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    .status-section {
+      font-size: 10px;
+    }
+    
+    .status-section span {
+      font-size: 10px !important;
+    }
+    
+    .status-section .ant-btn {
+      font-size: 10px !important;
+      height: 20px !important;
+      padding: 0 6px !important;
+    }
+  }
 
 .logo {
   display: flex;
@@ -77,7 +93,7 @@ body {
 .welcome-content {
   text-align: center;
   padding: 40px 20px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23E1251B" stop-opacity="0.03"/><stop offset="100%" stop-color="%23E1251B" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="50" fill="url(%23a)"/></svg>') center/cover;
+  background: linear-gradient(135deg, rgba(225, 37, 27, 0.02) 0%, rgba(225, 37, 27, 0) 50%, rgba(225, 37, 27, 0.01) 100%);
 }
 
 .welcome-title {
@@ -235,6 +251,20 @@ body {
     padding: 16px 12px;
   }
   
+  .status-section {
+    font-size: 11px;
+  }
+  
+  .status-section span {
+    font-size: 11px !important;
+  }
+  
+  .status-section .ant-btn {
+    font-size: 11px !important;
+    height: 22px !important;
+    padding: 0 8px !important;
+  }
+  
   .welcome-content {
     padding: 24px 16px;
   }
@@ -286,6 +316,10 @@ body {
     padding: 0 12px;
     height: 56px;
     line-height: 56px;
+  }
+  
+  .status-section {
+    display: none; /* 在小屏幕上隐藏状态信息以节省空间 */
   }
   
   .logo span {
@@ -350,24 +384,32 @@ body {
     height: auto;
   }
   
-  /* 输入框优化 */
+    /* 输入框优化 */
   .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
     height: 48px;
     font-size: 16px; /* 防止iOS Safari缩放 */
     border-radius: 6px;
-    padding: 12px 16px;
+    padding: 0 16px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
   }
-  
+
   .ant-input-affix-wrapper .ant-input {
-    padding: 12px 8px;
+    padding: 0 8px;
+    line-height: 48px;
   }
-  
+
   .ant-select-selector {
-    padding: 12px 16px !important;
+    padding: 0 16px !important;
+    line-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
   }
-  
+
   .ant-select-selection-placeholder {
-    line-height: 24px;
+    line-height: 48px !important;
+    margin: 0 !important;
   }
   
   /* 文本域优化 */

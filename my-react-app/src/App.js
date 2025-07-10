@@ -41,25 +41,42 @@ function App() {
 
   // 检查后端状态
   useEffect(() => {
-    const checkBackend = async () => {
+    let hasShownSuccessMessage = false;
+    let hasShownErrorMessage = false;
+    
+    const checkBackend = async (isInitial = false) => {
       console.log('🔍 开始检查后端连接状态...');
+      const previousStatus = backendStatus;
+      
       try {
         const result = await healthCheck();
         setBackendStatus('connected');
         console.log('✅ 后端连接成功:', result);
-        message.success('后端连接成功！', 2);
+        
+        // 只在初次连接成功或从失败状态恢复时显示消息
+        if (isInitial && !hasShownSuccessMessage) {
+          message.success('后端连接成功！', 1.5);
+          hasShownSuccessMessage = true;
+        } else if (previousStatus === 'disconnected') {
+          message.success('后端连接已恢复！', 1.5);
+        }
       } catch (error) {
         setBackendStatus('disconnected');
         console.error('❌ 后端连接失败:', error);
         console.error('错误详情:', error.message);
-        message.error('后端服务连接失败，请检查服务器状态', 3);
+        
+        // 只在状态改变时显示错误消息
+        if ((isInitial && !hasShownErrorMessage) || previousStatus === 'connected') {
+          message.error('后端服务连接失败，请检查服务器状态', 3);
+          hasShownErrorMessage = true;
+        }
       }
     };
 
-    checkBackend();
+    checkBackend(true);
     
-    // 每30秒重新检查一次连接状态
-    const intervalId = setInterval(checkBackend, 30000);
+    // 每60秒重新检查一次连接状态（降低频率）
+    const intervalId = setInterval(() => checkBackend(false), 60000);
     
     return () => clearInterval(intervalId);
   }, []);
@@ -297,23 +314,42 @@ function App() {
         </div>
         
         <div className="status-section">
-          <span style={{ 
-            fontSize: '12px', 
-            color: backendStatus === 'connected' ? '#52c41a' : backendStatus === 'checking' ? '#faad14' : '#ff4d4f' 
-          }}>
-            {backendStatus === 'checking' && '🔄 检查连接状态...'}
-            {backendStatus === 'connected' && '✅ 后端已连接'}
-            {backendStatus === 'disconnected' && '❌ 后端未连接'}
-          </span>
+          {backendStatus === 'checking' && (
+            <span style={{ 
+              fontSize: '11px', 
+              color: '#ffffff',
+              opacity: 0.8
+            }}>
+              检查连接状态...
+            </span>
+          )}
+          {backendStatus === 'connected' && (
+            <span style={{ 
+              fontSize: '11px', 
+              color: '#ffffff',
+              opacity: 0.7
+            }}>
+              后端已连接
+            </span>
+          )}
           {backendStatus === 'disconnected' && (
-            <Button 
-              size="small" 
-              style={{ marginLeft: '8px' }}
-              onClick={handleReconnect}
-              loading={backendStatus === 'checking'}
-            >
-              重新连接
-            </Button>
+            <>
+              <span style={{ 
+                fontSize: '11px', 
+                color: '#ff4d4f',
+                marginRight: '8px'
+              }}>
+                后端未连接
+              </span>
+              <Button 
+                size="small" 
+                style={{ fontSize: '11px', height: '24px', padding: '0 8px' }}
+                onClick={handleReconnect}
+                loading={backendStatus === 'checking'}
+              >
+                重新连接
+              </Button>
+            </>
           )}
         </div>
       </div>
