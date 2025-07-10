@@ -1,0 +1,1500 @@
+/* 京东电商风格的时尚造型应用样式 */
+
+/* 全局样式重置 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* 主布局 */
+.app-layout {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 头部样式 - 京东红色主题 */
+.app-header {
+  background: linear-gradient(135deg, #E1251B 0%, #C81623 100%);
+  box-shadow: 0 2px 8px rgba(225, 37, 27, 0.15);
+  padding: 0 24px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.status-section {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* 内容区域 */
+.app-content {
+  padding: 32px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+
+/* 欢迎卡片 */
+.welcome-card {
+  margin-bottom: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, #fff 0%, #fafafa 100%);
+  overflow: hidden;
+}
+
+.welcome-content {
+  text-align: center;
+  padding: 40px 20px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23E1251B" stop-opacity="0.03"/><stop offset="100%" stop-color="%23E1251B" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="50" fill="url(%23a)"/></svg>') center/cover;
+}
+
+.welcome-title {
+  color: #262626 !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 16px !important;
+  background: linear-gradient(135deg, #E1251B 0%, #C81623 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.welcome-subtitle {
+  font-size: 1.1rem;
+  color: #595959;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 表单卡片 */
+.form-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: none !important;
+}
+
+.form-card .ant-card-head {
+  background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+  border-bottom: 2px solid #E1251B;
+  border-radius: 12px 12px 0 0;
+}
+
+.form-card .ant-card-head-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #262626;
+}
+
+.form-card .ant-card-body {
+  padding: 32px;
+}
+
+/* 表单样式 */
+.ant-form-item-label > label {
+  font-weight: 600;
+  color: #262626;
+}
+
+.ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+  border-radius: 8px;
+  border: 2px solid #d9d9d9;
+  transition: all 0.3s ease;
+}
+
+.ant-input:hover, .ant-select-selector:hover, .ant-input-affix-wrapper:hover {
+  border-color: #E1251B;
+}
+
+.ant-input:focus, .ant-select-focused .ant-select-selector, .ant-input-affix-wrapper-focused {
+  border-color: #E1251B;
+  box-shadow: 0 0 0 2px rgba(225, 37, 27, 0.1);
+}
+
+.ant-select-dropdown {
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 上传组件样式 */
+.ant-upload-list-item {
+  border-radius: 8px;
+  border: 2px solid #f0f0f0;
+  background-color: #fafafa;
+}
+
+.ant-upload-list-item:hover {
+  border-color: #E1251B;
+}
+
+/* 提交按钮样式 - 京东风格，永远居中 */
+.submit-button {
+  background: linear-gradient(135deg, #E1251B 0%, #C81623 100%) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  height: 48px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0 48px;
+  box-shadow: 0 4px 16px rgba(225, 37, 27, 0.3) !important;
+  transition: all 0.3s ease !important;
+  display: block !important;
+  margin: 0 auto !important;
+  width: auto !important;
+  min-width: 280px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background: linear-gradient(135deg, #C81623 0%, #A0141C 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(225, 37, 27, 0.4) !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.submit-button:active {
+  transform: translateY(0) !important;
+  background: linear-gradient(135deg, #A0141C 0%, #8B1116 100%) !important;
+}
+
+.submit-button.ant-btn-loading {
+  background: linear-gradient(135deg, #E1251B 0%, #C81623 100%) !important;
+  border: none !important;
+}
+
+/* 按钮容器居中 */
+.submit-button-container {
+  text-align: center !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 消息提示样式 */
+.ant-message-notice-content {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 响应式设计 */
+
+/* 平板端优化 (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .app-content {
+    padding: 24px 16px;
+    max-width: 900px;
+  }
+  
+  .welcome-content {
+    padding: 32px 24px;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 28px;
+  }
+}
+
+/* 小平板/大手机端 (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .app-content {
+    padding: 16px 12px;
+  }
+  
+  .welcome-content {
+    padding: 24px 16px;
+  }
+  
+  .welcome-title {
+    font-size: 2.2rem !important;
+    line-height: 1.2;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 20px;
+  }
+  
+  .form-card .ant-card-head-title {
+    font-size: 1.2rem;
+  }
+  
+  .submit-button {
+    width: 100%;
+    height: 44px;
+    font-size: 1rem;
+    padding: 0 24px;
+  }
+  
+  /* 表单优化 */
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+  
+  .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+    height: 44px;
+    font-size: 16px; /* 防止iOS缩放 */
+  }
+  
+  .ant-btn {
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+/* 手机端优化 (320px - 480px) */
+@media (max-width: 480px) {
+  .app-header {
+    padding: 0 12px;
+    height: 56px;
+    line-height: 56px;
+  }
+  
+  .logo span {
+    font-size: 18px;
+  }
+  
+  .app-content {
+    padding: 12px 8px;
+  }
+  
+  .welcome-card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .welcome-content {
+    padding: 20px 12px;
+  }
+  
+  .welcome-title {
+    font-size: 1.8rem !important;
+    line-height: 1.3;
+    margin-bottom: 12px !important;
+  }
+  
+  .welcome-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 0 8px;
+  }
+  
+  .form-card {
+    border-radius: 8px;
+  }
+  
+  .form-card .ant-card-head {
+    padding: 0 16px;
+    min-height: 48px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .form-card .ant-card-head-title {
+    font-size: 1.1rem;
+    line-height: 48px;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 16px 12px;
+  }
+  
+  /* 表单项优化 */
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+  
+  .ant-form-item-label > label {
+    font-size: 14px;
+    height: auto;
+  }
+  
+  /* 输入框优化 */
+  .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+    height: 48px;
+    font-size: 16px; /* 防止iOS Safari缩放 */
+    border-radius: 6px;
+    padding: 12px 16px;
+  }
+  
+  .ant-input-affix-wrapper .ant-input {
+    padding: 12px 8px;
+  }
+  
+  .ant-select-selector {
+    padding: 12px 16px !important;
+  }
+  
+  .ant-select-selection-placeholder {
+    line-height: 24px;
+  }
+  
+  /* 文本域优化 */
+  .ant-input {
+    font-size: 16px;
+  }
+  
+  /* 按钮优化 */
+  .ant-btn {
+    height: 48px;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 20px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  
+  /* 上传组件优化 */
+  .ant-upload {
+    width: 100%;
+  }
+  
+  .ant-upload .ant-btn {
+    width: 100%;
+    height: 48px;
+  }
+  
+  .ant-upload-list {
+    margin-top: 12px;
+  }
+  
+  .ant-upload-list-item {
+    padding: 8px;
+    margin-top: 8px;
+  }
+  
+  /* 栅格系统优化 */
+  .ant-row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  
+  .ant-col {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* 超小屏幕优化 (320px以下) */
+@media (max-width: 359px) {
+  .app-header {
+    padding: 0 8px;
+  }
+  
+  .logo span {
+    font-size: 16px;
+  }
+  
+  .app-content {
+    padding: 8px 4px;
+  }
+  
+  .welcome-content {
+    padding: 16px 8px;
+  }
+  
+  .welcome-title {
+    font-size: 1.6rem !important;
+  }
+  
+  .welcome-subtitle {
+    font-size: 0.9rem;
+    padding: 0 4px;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 12px 8px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+/* 横屏手机优化 */
+@media (max-height: 500px) and (orientation: landscape) {
+  .app-header {
+    height: 48px;
+    line-height: 48px;
+  }
+  
+  .app-content {
+    padding: 8px;
+  }
+  
+  .welcome-content {
+    padding: 16px 12px;
+  }
+  
+  .welcome-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .welcome-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 16px 12px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+/* 自定义Ant Design主题色 */
+.ant-btn-primary {
+  background-color: #E1251B;
+  border-color: #E1251B;
+}
+
+.ant-btn-primary:hover {
+  background-color: #C81623;
+  border-color: #C81623;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #E1251B;
+  border-color: #E1251B;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #E1251B;
+}
+
+.ant-radio-inner::after {
+  background-color: #E1251B;
+}
+
+/* 加载动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-card, .form-card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.form-card {
+  animation-delay: 0.2s;
+}
+
+/* 移动端触摸优化 */
+@media (hover: none) and (pointer: coarse) {
+  /* 移除hover效果，使用active状态 */
+  .ant-input:hover, .ant-select-selector:hover, .ant-input-affix-wrapper:hover {
+    border-color: #d9d9d9;
+  }
+  
+  .ant-upload-list-item:hover {
+    border-color: #f0f0f0;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(135deg, #E1251B 0%, #C81623 100%);
+    transform: none;
+    box-shadow: 0 4px 16px rgba(225, 37, 27, 0.3);
+  }
+  
+  /* 增强点击反馈 */
+  .ant-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .ant-input:active, .ant-select-selector:active, .ant-input-affix-wrapper:active {
+    border-color: #E1251B;
+    box-shadow: 0 0 0 2px rgba(225, 37, 27, 0.1);
+  }
+}
+
+/* 移动端专用样式增强 */
+@media screen and (max-width: 768px) {
+  /* 防止横向滚动 */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* 优化选择框下拉 */
+  .ant-select-dropdown {
+    max-height: 50vh;
+  }
+  
+  /* 文件上传区域优化 */
+  .ant-upload-drag {
+    padding: 20px 16px;
+  }
+  
+  .ant-upload-drag .ant-upload-text {
+    font-size: 14px;
+  }
+  
+  .ant-upload-drag .ant-upload-hint {
+    font-size: 12px;
+  }
+  
+  /* 表单验证信息优化 */
+  .ant-form-item-explain-error {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  /* 消息提示优化 */
+  .ant-message {
+    top: 20px;
+  }
+  
+  .ant-message-notice {
+    margin: 4px 8px;
+  }
+  
+  .ant-message-notice-content {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+/* iOS Safari 特殊优化 */
+@supports (-webkit-touch-callout: none) {
+  /* 输入框聚焦时防止页面缩放 */
+  .ant-input, .ant-select-selector, .ant-input-affix-wrapper, textarea {
+    font-size: 16px !important;
+  }
+  
+  /* 修复iOS Safari中的圆角显示问题 */
+  .ant-btn, .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+    -webkit-appearance: none;
+    -webkit-border-radius: 6px;
+  }
+  
+  /* 优化iOS Safari中的触摸高亮 */
+  * {
+    -webkit-tap-highlight-color: rgba(225, 37, 27, 0.1);
+  }
+}
+
+/* 深色模式适配准备 */
+@media (prefers-color-scheme: dark) {
+  /* 如果需要支持深色模式，可以在这里添加样式 */
+}
+
+/* 高对比度模式适配 */
+@media (prefers-contrast: high) {
+  .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+    border-width: 3px;
+  }
+  
+  .submit-button {
+    border: 3px solid #C81623;
+  }
+}
+
+/* 减少动画偏好适配 */
+@media (prefers-reduced-motion: reduce) {
+  .welcome-card, .form-card {
+    animation: none;
+  }
+  
+  .submit-button {
+    transition: none;
+  }
+  
+  .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+    transition: none;
+  }
+}
+
+/* 图片上传和编辑相关样式 */
+
+/* 上传占位符样式 */
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
+  background-color: #fafafa;
+  border: 2px dashed #d9d9d9;
+  border-radius: 8px;
+  color: #8c8c8c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-placeholder:hover {
+  border-color: #E1251B;
+  color: #E1251B;
+  background-color: rgba(225, 37, 27, 0.02);
+}
+
+/* 自定义上传项样式 */
+.custom-upload-item {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.custom-upload-item:hover {
+  border-color: #E1251B;
+  box-shadow: 0 2px 8px rgba(225, 37, 27, 0.15);
+}
+
+.upload-item-thumbnail {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.upload-item-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.upload-item-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-upload-item:hover .upload-item-actions {
+  opacity: 1;
+}
+
+.upload-item-actions .ant-btn {
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #262626;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.upload-item-actions .ant-btn:hover {
+  background: #E1251B;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.upload-item-actions .ant-btn-dangerous:hover {
+  background: #ff4d4f;
+  color: #fff;
+}
+
+/* 图片上传列表优化 */
+.ant-upload-list-picture-card .ant-upload-list-item {
+  border-radius: 8px;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item:hover {
+  border-color: #E1251B;
+  box-shadow: 0 2px 8px rgba(225, 37, 27, 0.15);
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-actions {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-actions a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-actions a:hover {
+  color: #E1251B;
+}
+
+/* 图片编辑Modal样式 */
+.image-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.editor-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  min-width: 250px;
+}
+
+.control-group .ant-typography {
+  min-width: 50px;
+  margin-right: 8px;
+}
+
+.crop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+}
+
+/* React Crop 自定义样式 */
+.ReactCrop {
+  max-width: 100%;
+  max-height: 60vh;
+}
+
+.ReactCrop__crop-selection {
+  border: 2px solid #E1251B;
+  background-color: rgba(225, 37, 27, 0.1);
+}
+
+.ReactCrop__drag-handle {
+  background-color: #E1251B;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ReactCrop__drag-handle:after {
+  background-color: rgba(225, 37, 27, 0.8);
+}
+
+/* 图片预览Modal样式 */
+.ant-modal-body img {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 移动端图片编辑优化 */
+@media (max-width: 768px) {
+  .editor-controls {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .control-group {
+    min-width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .control-group .ant-slider {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  .crop-container {
+    padding: 12px;
+    min-height: 250px;
+  }
+  
+  .ReactCrop {
+    max-height: 40vh;
+  }
+  
+  /* 上传占位符在手机端的样式 */
+  .upload-placeholder {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+  
+  .upload-placeholder .anticon {
+    font-size: 20px !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .ant-upload-list-picture-card .ant-upload-list-item {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .ant-upload-list-picture-card {
+    gap: 8px;
+  }
+  
+  /* 自定义上传项在手机端的样式 */
+  .custom-upload-item {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .upload-item-actions {
+    gap: 4px;
+  }
+  
+  .upload-item-actions .ant-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-editor {
+    gap: 16px;
+  }
+  
+  .editor-controls {
+    padding: 12px;
+  }
+  
+  .control-group {
+    gap: 6px;
+  }
+  
+  .crop-container {
+    padding: 8px;
+    min-height: 200px;
+  }
+  
+  .ReactCrop {
+    max-height: 35vh;
+  }
+  
+  /* 编辑Modal在手机端的优化 */
+  .ant-modal {
+    margin: 8px;
+    max-width: none !important;
+  }
+  
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+  
+  .ant-modal-header {
+    padding: 16px 16px 8px;
+  }
+  
+  .ant-modal-body {
+    padding: 8px 16px;
+  }
+  
+  .ant-modal-footer {
+    padding: 8px 16px 16px;
+    text-align: center;
+  }
+  
+  .ant-modal-footer .ant-btn {
+    margin: 0 4px;
+    font-size: 14px;
+    height: 36px;
+  }
+}
+
+/* 横屏模式下的图片编辑优化 */
+@media (max-height: 500px) and (orientation: landscape) {
+  .crop-container {
+    min-height: 150px;
+  }
+  
+  .ReactCrop {
+    max-height: 25vh;
+  }
+  
+  .editor-controls {
+    padding: 8px;
+  }
+  
+  .control-group {
+    min-width: 200px;
+  }
+}
+
+/* Header导航按钮样式 */
+.header-nav-btn {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #CCCCCC !important;
+  font-size: 12px !important;
+  height: 32px !important;
+  padding: 0 12px !important;
+  border-radius: 16px !important;
+  font-weight: 400 !important;
+  transition: all 0.2s ease !important;
+}
+
+.header-nav-btn:hover {
+  color: #FFFFFF !important;
+  background-color: #666666 !important;
+  border-color: #666666 !important;
+}
+
+.header-nav-btn:focus {
+  color: #FFFFFF !important;
+  background-color: #666666 !important;
+  border-color: #666666 !important;
+}
+
+.header-nav-btn.active {
+  background-color: #E1251B !important;
+  border-color: #E1251B !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.header-nav-btn.active:hover {
+  background-color: #B71C1C !important;
+  border-color: #B71C1C !important;
+  color: #FFFFFF !important;
+}
+
+.header-nav-btn.active:focus {
+  background-color: #E1251B !important;
+  border-color: #E1251B !important;
+  color: #FFFFFF !important;
+}
+
+/* 确保按钮图标也有正确的颜色 */
+.header-nav-btn .anticon {
+  color: inherit !important;
+}
+
+/* Header导航容器样式 */
+.header-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 完善的响应式设计 */
+
+/* 超大屏幕 (1440px+) */
+@media (min-width: 1440px) {
+  .app-content {
+    max-width: 1400px;
+    padding: 40px 24px;
+  }
+  
+  .welcome-title {
+    font-size: 3rem !important;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 40px;
+  }
+}
+
+/* 大屏幕 (1200px - 1439px) */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  .app-content {
+    max-width: 1200px;
+    padding: 32px 20px;
+  }
+}
+
+/* 中等屏幕 (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .app-content {
+    max-width: 960px;
+    padding: 28px 16px;
+  }
+  
+  .welcome-content {
+    padding: 36px 20px;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 30px;
+  }
+}
+
+/* 平板横屏 (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .app-header {
+    padding: 0 16px;
+  }
+  
+  .logo span {
+    font-size: 18px;
+  }
+  
+  .header-nav-container {
+    gap: 6px;
+  }
+  
+  .header-nav-btn {
+    height: 28px !important;
+    font-size: 11px !important;
+    padding: 0 10px !important;
+  }
+  
+  .app-content {
+    max-width: 720px;
+    padding: 24px 16px;
+  }
+  
+  .welcome-content {
+    padding: 28px 20px;
+  }
+  
+  .welcome-title {
+    font-size: 2.3rem !important;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 24px;
+  }
+  
+  .submit-button {
+    min-width: 240px;
+    height: 44px;
+    font-size: 1rem;
+  }
+}
+
+/* 平板竖屏 (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .app-header {
+    padding: 0 12px;
+    height: 56px;
+    line-height: 56px;
+  }
+  
+  .logo-section {
+    font-size: 16px;
+  }
+  
+  .logo-section .anticon {
+    font-size: 20px !important;
+  }
+  
+  .header-nav-container {
+    gap: 8px;
+  }
+  
+  .header-nav-btn {
+    height: 32px !important;
+    font-size: 13px !important;
+    padding: 0 12px !important;
+    border-radius: 16px !important;
+    min-width: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .header-nav-btn .anticon {
+    font-size: 13px !important;
+    margin-right: 4px !important;
+  }
+  
+  .status-section {
+    font-size: 10px;
+  }
+  
+  .app-content {
+    padding: 20px 12px;
+  }
+  
+  .welcome-content {
+    padding: 24px 16px;
+  }
+  
+  .welcome-title {
+    font-size: 2rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1rem;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 20px;
+  }
+  
+  .submit-button {
+    min-width: 220px;
+    height: 42px;
+    font-size: 0.95rem;
+    padding: 0 32px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* 大手机 (480px - 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .app-header {
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+  }
+  
+  .logo-section {
+    font-size: 15px;
+  }
+  
+  .logo-section .anticon {
+    font-size: 18px !important;
+    margin-right: 6px !important;
+  }
+  
+  .header-nav-container {
+    gap: 6px;
+  }
+  
+  .header-nav-btn {
+    height: 30px !important;
+    font-size: 12px !important;
+    padding: 0 10px !important;
+    border-radius: 15px !important;
+    min-width: 55px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .header-nav-btn .anticon {
+    font-size: 12px !important;
+    margin-right: 4px !important;
+  }
+  
+  .app-content {
+    padding: 16px 10px;
+  }
+  
+  .welcome-content {
+    padding: 20px 12px;
+  }
+  
+  .welcome-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .welcome-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .form-card {
+    margin-bottom: 16px;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 16px;
+  }
+  
+  .submit-button {
+    min-width: 200px;
+    height: 40px;
+    font-size: 0.9rem;
+    padding: 0 24px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 18px;
+  }
+}
+
+/* 小手机 (360px - 479px) */
+@media (max-width: 479px) and (min-width: 360px) {
+  .app-header {
+    padding: 0 8px;
+    height: 48px;
+    line-height: 48px;
+  }
+  
+  .logo-section {
+    font-size: 14px;
+  }
+  
+  .logo-section .anticon {
+    font-size: 16px !important;
+    margin-right: 4px !important;
+  }
+  
+  .header-nav-container {
+    gap: 4px;
+  }
+  
+  .header-nav-btn {
+    height: 28px !important;
+    font-size: 11px !important;
+    padding: 0 8px !important;
+    border-radius: 14px !important;
+    min-width: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .header-nav-btn .anticon {
+    font-size: 11px !important;
+    margin-right: 3px !important;
+  }
+  
+  .app-content {
+    padding: 12px 8px;
+  }
+  
+  .welcome-content {
+    padding: 16px 10px;
+  }
+  
+  .welcome-title {
+    font-size: 1.6rem !important;
+    margin-bottom: 8px !important;
+    line-height: 1.1;
+  }
+  
+  .welcome-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .form-card .ant-card-head-title {
+    font-size: 1.1rem;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 12px;
+  }
+  
+  .submit-button {
+    min-width: 180px;
+    height: 36px;
+    font-size: 0.85rem;
+    padding: 0 16px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .ant-form-item-label > label {
+    font-size: 13px;
+  }
+  
+  .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+    font-size: 14px;
+    height: 36px;
+  }
+  
+  .ant-btn {
+    height: 32px;
+    font-size: 12px;
+  }
+}
+
+/* 超小手机 (320px - 359px) */
+@media (max-width: 359px) {
+  .app-header {
+    padding: 0 6px;
+    height: 44px;
+    line-height: 44px;
+  }
+  
+  .logo-section {
+    font-size: 12px;
+  }
+  
+  .logo-section .anticon {
+    font-size: 14px !important;
+    margin-right: 3px !important;
+  }
+  
+  .header-nav-container {
+    gap: 3px;
+  }
+  
+  .header-nav-btn {
+    height: 26px !important;
+    font-size: 10px !important;
+    padding: 0 6px !important;
+    border-radius: 13px !important;
+    min-width: 45px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .header-nav-btn .anticon {
+    font-size: 10px !important;
+    margin-right: 2px !important;
+  }
+  
+  .app-content {
+    padding: 10px 6px;
+  }
+  
+  .welcome-content {
+    padding: 12px 8px;
+  }
+  
+  .welcome-title {
+    font-size: 1.4rem !important;
+    margin-bottom: 6px !important;
+    line-height: 1.1;
+  }
+  
+  .welcome-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  
+  .form-card .ant-card-head-title {
+    font-size: 1rem;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 10px;
+  }
+  
+  .submit-button {
+    min-width: 160px;
+    height: 32px;
+    font-size: 0.8rem;
+    padding: 0 12px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 14px;
+  }
+  
+  .ant-form-item-label > label {
+    font-size: 12px;
+  }
+  
+  .ant-input, .ant-select-selector, .ant-input-affix-wrapper {
+    font-size: 13px;
+    height: 32px;
+  }
+  
+  .ant-btn {
+    height: 28px;
+    font-size: 11px;
+  }
+  
+  .ant-col {
+    padding: 0 4px !important;
+  }
+}
+
+/* 横屏优化 */
+@media (max-height: 600px) and (orientation: landscape) {
+  .app-header {
+    height: 44px;
+    line-height: 44px;
+  }
+  
+  .header-nav-container {
+    margin-top: 6px;
+  }
+  
+  .header-nav-btn {
+    height: 20px !important;
+    font-size: 9px !important;
+  }
+  
+  .app-content {
+    padding: 12px 16px;
+  }
+  
+  .welcome-content {
+    padding: 16px 20px;
+  }
+  
+  .welcome-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .form-card .ant-card-body {
+    padding: 16px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
