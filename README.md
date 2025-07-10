@@ -12,7 +12,7 @@ https://ai-stylist-frontend.onrender.com/
 
 This app is basically your personal fashion consultant that never sleeps. You tell it your style preferences, optionally upload some photos, and it gives you tailored fashion advice including color palettes, outfit suggestions, and brand recommendations from JD.com's partner stores.
 
-The whole thing started as a way to help people who struggle with putting together outfits or just want to try something new. Instead of spending hours scrolling through fashion blogs or asking friends for advice, you get instant, personalized recommendations.
+The whole thing started as a way to help people who wants to put together outfits better or just want to try something new. Instead of spending hours scrolling through fashion blogs or asking friends for advice, you get instant, personalized recommendations.
 
 ### Features
 
@@ -173,20 +173,15 @@ Check that both servers are running and the API base URL in `my-react-app/src/ap
 Most are handled, but if you see new ones, they're usually about missing dependencies in useEffect hooks.
 
 ### Contributing
-
-Feel free to fork this and make it better. The code is pretty straightforward - the main logic for style recommendations is in `backend-express/server.js` in the `getStyleAdvice` function.
-
-If you want to add new style categories or change the brand recommendations, that's where you'll want to look.
-
 ---
 
 ## 中文版本
 
 ### 这个应用是做什么的
 
-这基本上就是一个永远不睡觉的个人时尚顾问。你告诉它你的风格喜好，可选择上传一些照片，然后它会给你量身定制的时尚建议，包括色彩搭配、服装建议和京东合作品牌推荐。
+这基本上就是数字个人时尚顾问。你告诉它你的风格喜好，可选择上传一些照片，然后它会给你量身定制的时尚建议，包括色彩搭配、服装建议和京东合作品牌推荐。
 
-开发这个应用的初衷是帮助那些在搭配服装上有困难的人，或者想要尝试新风格的人。不用花几个小时浏览时尚博客或者问朋友建议，你可以立即获得个性化的推荐。
+开发这个应用的初衷是帮助那些在搭配服装上有需求和创意的人，或者想要尝试新风格的人。不用花几个小时浏览时尚博客或者问朋友建议，你可以立即获得个性化的推荐。
 
 ### 功能特点
 
