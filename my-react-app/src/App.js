@@ -79,7 +79,7 @@ function App() {
     const intervalId = setInterval(() => checkBackend(false), 60000);
     
     return () => clearInterval(intervalId);
-  }, []);
+  }, [backendStatus]); // 添加依赖项
 
   // 获取图片预览URL
   const getBase64 = (file) => {

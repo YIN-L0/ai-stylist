@@ -138,9 +138,36 @@ const StylingReport = ({ reportData, userData }) => {
 
       <Divider />
 
+      {/* AI个性化分析 */}
+      {report.aiStyleAnalysis && (
+        <Row gutter={[24, 24]}>
+          <Col xs={24}>
+            <Card title="🤖 AI个性化风格分析" bordered={false}>
+              <div style={{ 
+                background: 'linear-gradient(135deg, #f6f9fc 0%, #e9f2ff 100%)',
+                padding: '20px',
+                borderRadius: '12px',
+                border: '1px solid #e6f7ff'
+              }}>
+                <Text style={{ 
+                  fontSize: '16px', 
+                  fontStyle: 'italic',
+                  color: '#1890ff',
+                  lineHeight: '1.8'
+                }}>
+                  "{report.aiStyleAnalysis}"
+                </Text>
+              </div>
+            </Card>
+          </Col>
+        </Row>
+      )}
+
+      <Divider />
+
       {/* 总结 */}
       <Card title="📝 总结" bordered={false}>
-        <Paragraph style={{ fontSize: '16px', lineHeight: '1.8' }}>
+        <Paragraph style={{ fontSize: '16px', lineHeight: '1.8', whiteSpace: 'pre-line' }}>
           {report.summary || '正在为您生成个性化的造型总结...'}
         </Paragraph>
         <div style={{ textAlign: 'center', marginTop: '24px' }}>

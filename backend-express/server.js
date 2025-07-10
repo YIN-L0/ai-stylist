@@ -315,7 +315,13 @@ function generateStylingReport(user) {
     },
     outfitSuggestions: styleAdvice.outfits,
     shoppingSuggestions: styleAdvice.shopping,
-    summary: `亲爱的${name}，根据您${stylePreference}的风格偏好，我们为您精心策划了个性化的造型方案。这些建议将帮助您展现最佳的自己。`
+    aiStyleAnalysis: styleAdvice.aiDescription,
+    summary: `亲爱的${name}，根据您${stylePreference}的风格偏好，我们为您精心策划了个性化的造型方案。
+
+✨ AI个性化分析：
+${styleAdvice.aiDescription}
+
+这些建议将帮助您展现最佳的自己，在京东商城即可找到推荐的品牌商品。`
   };
 }
 
@@ -335,7 +341,8 @@ function getStyleAdvice(stylePreference) {
         '针织毛衣 + 休闲裤 + 乐福鞋',
         '连帽卫衣 + 运动裤 + 运动鞋'
       ],
-      shopping: ['优衣库', 'Gap', 'Zara', 'H&M']
+      shopping: ['优衣库 Uniqlo', 'Gap', 'Levi\'s', 'Converse'],
+      aiDescription: 'You have a casual style with urban influence and comfort-first mindset. Try JD brands like Uniqlo, Gap, and Levi\'s. Outfit suggestion: light jeans, oversized cotton top, white sneakers.'
     },
     'Business Professional': {
       colors: ['深蓝色', '黑色', '灰色', '白色', '深红色'],
@@ -350,7 +357,8 @@ function getStyleAdvice(stylePreference) {
         '灰色套装 + 浅蓝色衬衫 + 黑色皮鞋',
         '黑色西装 + 白色衬衫 + 简约配饰'
       ],
-      shopping: ['Hugo Boss', 'Armani', 'Brooks Brothers', '定制西装店']
+      shopping: ['Calvin Klein', 'Tommy Hilfiger', 'Hugo Boss', 'Brooks Brothers'],
+      aiDescription: 'You have a business professional style with executive presence and classic sophistication. Try JD brands like Calvin Klein, Tommy Hilfiger, and Hugo Boss. Outfit suggestion: navy suit, crisp white shirt, leather oxford shoes.'
     },
     'Trendy & Fashion-forward': {
       colors: ['亮色系', '撞色搭配', '金属色', '渐变色'],
@@ -365,9 +373,89 @@ function getStyleAdvice(stylePreference) {
         '印花上衣 + 高腰裤 + 声明耳环',
         '不对称裙子 + 时尚上衣 + 高跟鞋'
       ],
-      shopping: ['Zara', 'Mango', 'COS', '独立设计师品牌']
+      shopping: ['Zara', 'H&M', 'COS', 'Mango'],
+      aiDescription: 'You have a trendy fashion-forward style with cutting-edge aesthetics and bold statement pieces. Try JD brands like Zara, H&M, and COS. Outfit suggestion: statement blazer, wide-leg trousers, chunky sneakers.'
+    },
+    'Classic & Elegant': {
+      colors: ['象牙白', '海军蓝', '驼色', '珍珠灰', '酒红色'],
+      recommendations: [
+        '投资经典永不过时的单品',
+        '选择高质量的天然面料如羊毛、丝绸',
+        '注重剪裁和细节工艺',
+        '选择精致优雅的配饰'
+      ],
+      outfits: [
+        '驼色大衣 + 白色丝绸衬衫 + 直筒裤',
+        '小黑裙 + 珍珠项链 + 经典高跟鞋',
+        '羊绒毛衣 + A字裙 + 芭蕾平底鞋'
+      ],
+      shopping: ['Ralph Lauren', 'Brooks Brothers', '优衣库 Uniqlo', 'Massimo Dutti'],
+      aiDescription: 'You have a classic elegant style with timeless sophistication and refined taste. Try JD brands like Ralph Lauren, Brooks Brothers, and Uniqlo. Outfit suggestion: camel coat, silk blouse, tailored trousers.'
+    },
+    'Bohemian & Artistic': {
+      colors: ['大地色系', '深绿色', '芥末黄', '紫色', '焦糖色'],
+      recommendations: [
+        '选择有民族风情的印花和图案',
+        '层次搭配不同质感的面料',
+        '添加手工艺品和复古配饰',
+        '选择自然材质如麻、棉、皮革'
+      ],
+      outfits: [
+        '印花长裙 + 牛仔外套 + 流苏靴',
+        '刺绣上衣 + 阔腿裤 + 编织腰带',
+        '民族风开衫 + 基础T恤 + 麂皮短靴'
+      ],
+      shopping: ['Zara', 'Mango', 'Free People', 'Anthropologie'],
+      aiDescription: 'You have a bohemian artistic style with free-spirited creativity and eclectic mix patterns. Try JD brands like Zara, Mango, and Free People. Outfit suggestion: flowy maxi dress, denim jacket, fringe ankle boots.'
+    },
+    'Sporty & Active': {
+      colors: ['运动蓝', '活力橙', '清新绿', '纯净白', '炭灰色'],
+      recommendations: [
+        '选择透气排汗的功能性面料',
+        '投资专业的运动装备',
+        '注重舒适性和灵活性',
+        '选择支撑性好的运动鞋'
+      ],
+      outfits: [
+        '运动上衣 + 瑜伽裤 + 跑步鞋',
+        '连帽卫衣 + 运动短裤 + 篮球鞋',
+        '运动夹克 + 紧身裤 + 训练鞋'
+      ],
+      shopping: ['Nike', 'Adidas', 'Under Armour', 'Lululemon'],
+      aiDescription: 'You have a sporty active style with athletic performance and dynamic energy. Try JD brands like Nike, Adidas, and Under Armour. Outfit suggestion: moisture-wicking top, yoga leggings, running sneakers.'
+    },
+    'Minimalist & Clean': {
+      colors: ['纯白色', '经典黑', '中性灰', '自然米', '简约蓝'],
+      recommendations: [
+        '选择简洁线条的基础款',
+        '注重质感和剪裁的精致',
+        '保持配色的统一和谐',
+        '投资多功能的万能单品'
+      ],
+      outfits: [
+        '白色衬衫 + 黑色直筒裤 + 简约皮鞋',
+        '灰色毛衣 + 白色阔腿裤 + 小白鞋',
+        '黑色T恤 + 牛仔裤 + 简约手表'
+      ],
+      shopping: ['优衣库 Uniqlo', 'COS', 'MUJI', '无印良品'],
+      aiDescription: 'You have a minimalist clean style with modern simplicity and functional aesthetics. Try JD brands like Uniqlo, COS, and MUJI. Outfit suggestion: white button-down, straight black pants, sleek white sneakers.'
+    },
+    'Vintage & Retro': {
+      colors: ['复古红', '怀旧黄', '经典蓝', '古董绿', '奶油色'],
+      recommendations: [
+        '寻找经典年代的设计元素',
+        '选择复古印花和图案',
+        '添加怀旧感的配饰',
+        '关注二手和古着单品'
+      ],
+      outfits: [
+        '复古印花裙 + 牛仔夹克 + 复古靴',
+        '格纹衬衫 + 高腰裤 + 复古眼镜',
+        '复古毛衣 + A字裙 + 玛丽珍鞋'
+      ],
+      shopping: ['Zara', 'H&M', 'Urban Outfitters', 'Vintage Stores'],
+      aiDescription: 'You have a vintage retro style with nostalgic charm and timeless character. Try JD brands like Zara, H&M, and vintage collections. Outfit suggestion: high-waisted jeans, retro band tee, classic denim jacket.'
     }
-    // 可以继续添加其他风格...
   };
 
   return adviceMap[stylePreference] || adviceMap['Casual & Comfortable'];
