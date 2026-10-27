@@ -1,10 +1,14 @@
-# AI Stylist - Personal Fashion Recommendation App / AI时尚造型师 - 个人时尚推荐应用
+# Fashion Commerce — Early Multimodal Styling Prototype
 
-A full-stack web application that provides personalized fashion styling recommendations based on user preferences and photos. Built with React frontend and Express backend, designed with JD.com's signature red theme.
-https://ai-stylist-frontend.onrender.com/
+An early multimodal prototype exploring how text preferences and photos can be turned into an orchestrated recommendation workflow. It is the predecessor to the Fashion Commerce agent orchestration work — kept here to show the evolution from a single-flow demo toward multi-step, production-oriented agent workflows.
 
-一个全栈网页应用，基于用户偏好和照片提供个性化时尚造型建议。采用React前端和Express后端，使用京东标志性红色主题设计。
-https://ai-stylist-frontend.onrender.com/
+What this prototype explores:
+
+- How user preferences, expressed loosely in text, can be interpreted as structured styling constraints.
+- How photos and preferences together provide richer context than either modality alone.
+- How a recommendation workflow can be organized as distinct, checkable steps rather than one opaque generation step.
+
+This is intentionally an early exploration. Its value is in the questions it raised — about intent, consistency, and verification — which the later Fashion Commerce orchestration work addresses more directly.
 
 ## English Version
 
